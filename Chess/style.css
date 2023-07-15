@@ -1,0 +1,138 @@
+/* color 
+Black squre :759656
+white squre :EEEED2
+
+Row rank
+column file 
+
+*/
+.itisclicked
+{
+
+    position: relative;
+    background-color:#BBC940;
+    width: 90px;
+    height: 90px;
+}
+.hlt-move
+{
+    position: relative;
+    background-color:pink;
+    border: #7A5C58 solid 0.5px;
+    width: 89px;
+    height: 89px;
+}
+.squre
+{
+    position: relative;
+    background-color:#EEEED2;
+    width: 90px;
+    height: 90px;
+}
+.last-move
+{
+    position: relative;
+    background-color:burlywood;
+    border: black solid 0.5px;
+    width: 89px;
+    height: 89px;
+}
+
+.dad-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    height: 720px;
+    width: 720px;
+    border-radius: 3px;
+    overflow: hidden; 
+}
+
+.num
+{
+    color:#759656;
+}
+.number  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.number2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+.number3
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    bottom: 2px;
+    right:2px;
+}
+.char  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+.char2
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+.char3
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 2px;
+    right: 2px;   
+}
+img
+{
+    width: 100%;
+    user-select: none;  
+    object-fit: cover; /* This ensures that the image fills the square container */    
+}
+
+.files:nth-of-type(odd) .squre:nth-of-type(even)
+{
+    background-color:#759656;
+}
+.files:nth-of-type(even) .squre:nth-of-type(odd)
+{
+    background-color:#759656;
+}
+
+.files:nth-of-type(odd) .squre:nth-of-type(even) .num
+{
+    color:#EEEED2;
+}
+.files:nth-of-type(even) .squre:nth-of-type(odd) .num
+{
+    color:#EEEED2;
+}
+
+
+.files:nth-of-type(odd) .itisclicked:nth-of-type(odd)
+{
+    background-color: #F7F685;
+}
+
+.files:nth-of-type(even) .itisclicked:nth-of-type(even)
+{
+    background-color: #F7F685;
+}
+
+  

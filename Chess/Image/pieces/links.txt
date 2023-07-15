@@ -1,0 +1,13 @@
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/pawn.png" alt="pawn" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/bishop.png" alt="bishop" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/King.png" alt="king" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/queen.png" alt="queen" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/knight.png" alt="Knight" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/black/rook.png" alt="rook" srcset="">
+    <br>
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/pawn.png" alt="pawn" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/bishop.png" alt="bishop" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/King.png" alt="king" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/knight.png" alt="Knight" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/rook.png" alt="rook" srcset="">
+    <img src="/Users/dbtalaviya/Desktop/Chess/Image/pieces/white/queen.png" alt="queen" srcset="">

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess-Game</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="digant" src="./Audio/capture.mp3"></audio>
+    <audio id="rotate" src="./Audio/castle.mp3"></audio>
+    <audio id="move" src="./Audio/move-self.mp3"></audio>
+    <audio id="gameover" src="./Audio/gameover.m4a"></audio>
+    <audio id="check" src="./Audio/Check.m4a"></audio>
+    <audio id="gamestart" src="./Audio/Gamestart.m4a"></audio>
+    <!-- <script  src="./Logic/chess.js"></script> -->
+</head>
+    <body style="background-color: #302E2B;">
+    <div class="dad-container"> 
+        <div class="main-container">
+            <div class="file-a files">
+                <div class="squre" id="a8"><div class="number num">8</div><div class="char2 num">a</div><img class="black" id="r" src="./Image/pieces/black/rook.png" draggable="false" alt="rook"></div>
+                <div class="squre" id="a7"><div class="number num">7</div><img class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="a6"><div class="number num">6</div></div>
+                <div class="squre" id="a5"><div class="number num">5</div></div>
+                <div class="squre" id="a4"><div class="number num">4</div></div>
+                <div class="squre" id="a3"><div class="number num">3</div></div>
+                <div class="squre" id="a2"><div class="number num">2</div><img class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="a1"><div class="number num">1</div><div class="char num">a</div><img class="white" id="R" src="./Image/pieces/white/rook.png" draggable="false" alt="pawn" srcset=""></div>
+            </div>
+            <div class="file-b files">
+                <div class="squre" id="b8"><div class="char2 num">b</div><img class="black" id="n" src="./Image/pieces/black/knight.png" draggable="false" alt="knight" srcset=""></div>
+                <div class="squre" id="b7"><img class="black" id="p"src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="b6"></div>
+                <div class="squre" id="b5"></div>
+                <div class="squre" id="b4"></div>
+                <div class="squre" id="b3"></div>
+                <div class="squre" id="b2"><img class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="b1"><div class="char num">b</div><img class="white" id="N" src="./Image/pieces/white/knight.png" draggable="false" alt="knight" srcset=""></div>
+            </div>
+            <div class="file-c files">
+                <div class="squre" id="c8"><div class="char2 num">c</div><img class="black"  id="b" src="./Image/pieces/black/bishop.png" draggable="false" alt="bishop" srcset=""></div>
+                <div class="squre" id="c7"><img  class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="c6"></div>
+                <div class="squre" id="c5"></div>
+                <div class="squre" id="c4"></div>
+                <div class="squre" id="c3"></div>
+                <div class="squre" id="c2"><img class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="c1"><div class="char num">c</div><img  class="white" id="B" src="./Image/pieces/white/bishop.png" draggable="false" alt="bishop" srcset=""></div>
+            </div>
+            <div class="file-d files">
+                <div class="squre" id="d8"><div class="char2 num">d</div><img class="black"  id="q" src="./Image/pieces/black/queen.png" draggable="false" alt="queen" srcset=""></div>
+                <div class="squre" id="d7"><img  class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="d6"></div>
+                <div class="squre" id="d5"></div>
+                <div class="squre" id="d4"></div>
+                <div class="squre" id="d3"></div>
+                <div class="squre" id="d2"><img  class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="d1"><div class="char num">d</div><img  class="white" id="Q" src="./Image/pieces/white/queen.png" draggable="false" alt="queen" srcset=""></div>
+            </div><div class="file-e files">
+                <div class="squre" id="e8"><div class="char2 num">e</div><img   class="black"  id="k" src="./Image/pieces/black/king.png" draggable="false" alt="king" srcset=""></div>
+                <div class="squre" id="e7"><img   class="black"  id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="e6"></div>
+                <div class="squre" id="e5"></div>
+                <div class="squre" id="e4"></div>
+                <div class="squre" id="e3"></div>
+                <div class="squre" id="e2"><img class="white"  id="P"src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="e1"><div class="char num">e</div><img class="white"  id="K" src="./Image/pieces/white/king.png" draggable="false" alt="king" srcset=""></div> id="f"
+            </div><div class="file-f files">
+                <div class="squre" id="f8"><div class="char2 num">f</div><img   class="black" id="b" src="./Image/pieces/black/bishop.png" draggable="false" alt="bishop" srcset=""></div>
+                <div class="squre" id="f7"><img   class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="f6"></div>
+                <div class="squre" id="f5"></div>
+                <div class="squre" id="f4"></div>
+                <div class="squre" id="f3"></div>
+                <div class="squre" id="f2"><img  class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="f1"><div class="char num">f</div><img  class="white" id="B" src="./Image/pieces/white/bishop.png" draggable="false" alt="bishop" srcset=""></div>
+            </div><div class="file-g files">
+                <div class="squre" id="g8"><div class="char2 num">g</div><img   class="black" id="n" src="./Image/pieces/black/knight.png" draggable="false" alt="knight" srcset=""></div>
+                <div class="squre" id="g7"><img   class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="g6"></div>
+                <div class="squre" id="g5"></div>
+                <div class="squre" id="g4"></div>
+                <div class="squre" id="g3"></div>
+                <div class="squre" id="g2"><img  class="white" id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="g1"><div class="char num">g</div><img  class="white" id="N" src="./Image/pieces/white/knight.png" draggable="false" alt="knight" srcset=""></div>
+            </div><div class="file-h files">
+                <div class="squre" id="h8"><div class="char3 num">h</div><div class="number3 num">8</div><img   class="black" id="r" src="./Image/pieces/black/rook.png" draggable="false" alt="rook" srcset=""></div>
+                <div class="squre" id="h7"><div class="number2 num">7</div><img   class="black" id="p" src="./Image/pieces/black/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="h6"><div class="number2 num">6</div></div>
+                <div class="squre" id="h5"><div class="number2 num">5</div></div>
+                <div class="squre" id="h4"><div class="number2 num">4</div></div>
+                <div class="squre" id="h3"><div class="number2 num">3</div></div>
+                <div class="squre" id="h2"><div class="number2 num">2</div><img  class="white"  id="P" src="./Image/pieces/white/pawn.png" draggable="false" alt="pawn" srcset=""></div>
+                <div class="squre" id="h1"><div class="number2 num">1</div><div class="char num">h</div><img  class="white" id="R" src="./Image/pieces/white/rook.png" draggable="false" alt="rook" srcset=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="moves"></div>
+    <script src="./Logic/chess.js"></script>
+    <script src="./Logic/main.js"></script>
+
+</body>
+</html>
+
